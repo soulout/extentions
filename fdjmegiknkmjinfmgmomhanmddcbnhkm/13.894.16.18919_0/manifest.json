@@ -1,0 +1,44 @@
+{
+   "background": {
+      "scripts": [ "js/polyfill.js", "js/PartnerId.js", "js/chrome.js", "js/util.js", "js/TemplateParser.js", "js/ajax.js", "js/ul.js", "js/dlpHelper.js", "js/dlp.js", "js/logger.js", "js/storageUtils.js", "js/webtooltabAPI.js", "js/dateTimeUtils.js", "js/offerService.js", "js/remoteConfigLoader.js", "js/babClickHandler.js", "js/browserUtils.js", "js/splashPageRedirectHandler.js", "js/contentScriptConnectionManager.js", "js/babAPI.js", "js/babContentScriptAPI.js", "js/background.js", "js/index.js", "js/urlUtils.js", "js/pageUtils.js", "js/urlFragmentActions.js" ]
+   },
+   "browser_action": {
+      "browser_style": true,
+      "default_icon": {
+         "19": "icons/icon19on.png"
+      },
+      "default_title": ""
+   },
+   "chrome_url_overrides": {
+      "newtab": "ntpnew.html"
+   },
+   "content_scripts": [ {
+      "js": [ "/js/logger.js", "/js/chrome.js", "/js/util.js", "/js/webTooltabAPIProxy.js" ],
+      "matches": [ "*://*.fromdoctopdf.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "js/logger.js", "js/chrome.js", "js/util.js", "js/localStorageContentScript.js" ],
+      "matches": [ "*://fromdoctopdf.dl.myway.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "js/logger.js", "js/chrome.js", "js/util.js", "js/extensionDetect.js" ],
+      "matches": [ "*://*.fromdoctopdf.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_marketingDescription__",
+   "homepage_url": "http://download.fromdoctopdf.com/index.jhtml",
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon19on.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlBNTQ3bKyCIqaShPKHFAGZJ0K5d2SZj6sX6PKDZYvVol46BhdAhTh/4GhChvzR/u/5GuWTzCWrNjvwOecANoLVMb/8PDiwJA06vz887TUK4fR7IL+hjFWyVvDdhYAeJ51uekWaJwCs3jdEoc9MwyBbN+nrCdlhaHzn7B8OSmUAM92jiXMWla5KTkTbCfbptcVuMt+CKeBPO7rCzXuAVgFcc7LsWaLIRQXDkds+jh96ULgdpgVIhY+B33SDeF/+/KOz8AqADtKt8EaHgP5/jzhdWjUU3cGHF/vdMppmOFac3MXpvUXoEAnyTNtdIIUR9WcuSCH8sfv3qbGDHozb120QIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_productName__",
+   "permissions": [ "alarms", "contextMenus", "tabs", "storage", "activeTab", "webNavigation", "webRequestBlocking", "webRequest", "*://anx.tb.ask.com/*", "*://live.tb.ask.com/*", "https://*.amazonaws.com/*", "*://*.fromdoctopdf.com/*", "*://hp.myway.com/*", "management", "downloads", "cookies" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "13.894.16.18919",
+   "web_accessible_resources": [  ]
+}

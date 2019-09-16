@@ -1,0 +1,91 @@
+<div ng-class="{'popup-campaign':main.hasActiveCampaign}">
+<div class="popup-head">
+    <div class="popup-head-logo"><img src="../assets/popup-logo.png" alt=""> for <span>{{::config.platform}}</span></div>
+    <div class="popup-head-license" ng-class="{'popup-head-license-basic':(session.license==1),'popup-head-license-premium':(session.license==2)}"></div>
+    <div class="popup-head-user dd" ng-class="{'dd-open':main.ui.userListOpen}" mouseaway="main.ui.setUserListOpen(false)">
+        <a href="javascript:" class="dd-trigger" ng-click="main.ui.setUserListOpen()"><span>{{session.name}}</span><i class="gingericon-dropdown-arrow"></i></a>
+        <div class="dd-content" ng-mouseover="main.ui.setUserListOpen(true)">
+            <div class="popup-head-user-body" ng-if="session.email">
+                <div class="popup-head-user-body-email">{{session.email}}</div>
+            </div>
+            <div class="popup-head-user-foot">
+                <a ng-click="main.ui.logout()" class="btn">Log out</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup-body">
+    <div class="popup-body-row" ng-if="main.currentHost.indexOf('0000000000')===-1">
+        <div class="popup-body-row-label">
+            Check for Grammar and Spelling<br> on <img class="popup-body-favicon" ng-if="main.faviconUrl" ng-src="{{main.faviconUrl}}"> <b>{{main.currentHost}}</b>
+        </div>
+        <div class="popup-body-row-input">
+            <span ginger-switch ng-value="main.isGingerEnabled"></span>
+        </div>
+    </div>
+    <div class="popup-body-row">
+        <div class="popup-body-row-label">
+            Display pop-up definitions when double-clicking a word
+        </div>
+        <div class="popup-body-row-input">
+            <span ginger-switch ng-value="main.settings.enableDefinitions"></span>
+        </div>
+    </div>
+
+    <!--<div class="popup-body-rowgroup">-->
+    <div class="popup-body-row popup-body-row-small">
+        <div class="popup-body-row-label">
+            Dialect
+        </div>
+        <div class="popup-body-row-input">
+            <select name="" id="" ng-model="main.settings.dialect" ng-change="main.dialectChanged()">
+                <option value="UK">English UK</option>
+                <option value="US">English US</option></select>
+        </div>
+    </div>
+
+    <!--<div class="popup-body-row popup-body-row-small">
+        <div class="popup-body-row-label popup-body-settings">
+            <a href="javascript:">Settings <i class="gingericon-caret-down"></i></a>
+            <div class="popup-body-settings-content" >
+                <div class="popup-body-row">
+                    <div class="popup-body-row-label">
+                        Contextual spelling
+                    </div>
+                    <div class="popup-body-row-input">
+                        <span ginger-switch ng-value="main.settings.contextualSpelling"></span>
+                    </div>
+                </div>
+                <div class="popup-body-row">
+                    <div class="popup-body-row-label">
+                        Spelling
+                    </div>
+                    <div class="popup-body-row-input">
+                        <span ginger-switch ng-value="main.settings.spelling"></span>
+                    </div>
+                </div>
+                <div class="popup-body-row">
+                    <div class="popup-body-row-label">
+                        Grammar & Punctiation
+                    </div>
+                    <div class="popup-body-row-input">
+                        <span ginger-switch ng-value="main.settings.grammarAndPunctuation"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!--</div>-->
+</div>
+<div class="popup-foot">
+    <div class="popup-foot-row popup-foot-gopremium" ng-if="session.license===0">
+        <div class="popup-foot-gopremium-banner" ginger-banner="popup.inFooter"></div>
+        <a target="_blank" href="http://www.gingersoftware.com/online_store/ginger_upgrade?cp=Extmenu-Link-{{config.platform|capitalize}}&autk={{session.token}}" class="btn btn-premium">Go Premium</a>
+    </div>
+    <div class="popup-foot-row mute" >
+        <a class="popup-foot-app" target="_blank" href="https://www.gingersoftware.com/ginger-writer" rel="noopener"> <i class="gingericon-writer"></i> Ginger Writer</a>
+        <a class="popup-foot-app" target="_blank" href="https://www.gingersoftware.com/myginger/apps"> <i class="gingericon-apps"></i> Ginger Apps</a>
+    </div>
+</div>
+</div>

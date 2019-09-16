@@ -1,0 +1,25 @@
+{
+   "background": {
+      "scripts": [ "listener.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "static/icon_128.png",
+         "16": "static/icon_16.png",
+         "48": "static/icon_48.png"
+      },
+      "default_popup": "index.html"
+   },
+   "description": "Collects and displays SAML messages",
+   "icons": {
+      "128": "static/icon_128.png",
+      "16": "static/icon_16.png",
+      "48": "static/icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhKsTh4ClTHi83QjVOood1caRt+BCYyRI+mHxzO0JHamaU5UWFTWp+cFIeHAvQxVmHDxPACtbgze+hJBjK1nP4I0wU3QFdh9natjCI93NBrDJcv/IS5yWl5qInex2M4uYIKGu3+ylPZKokuhlNICzvl9FACfOKcGpLDBBEbruGWpGs0C8JRtbO/aA+xjgshf9n58rSpAAtioLjO41rgRaPg2xFP6Tax54uOl0fL9Cx9ne5VmlBB0zJL9TA1d/ekvsawXif2CBG5gsHRm4YP3RfX1CW4uVsbHEvMB74gnktKZF9KEf9KOKWKdnJy7nOthse2kUVMwSgEc7ZPYn8kXbowIDAQAB",
+   "manifest_version": 2,
+   "name": "SAML Message Decoder",
+   "permissions": [ "\u003Call_urls>", "webRequest", "contextMenus", "storage", "downloads" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1"
+}

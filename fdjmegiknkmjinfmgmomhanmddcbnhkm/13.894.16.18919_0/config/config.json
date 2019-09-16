@@ -1,0 +1,39 @@
+
+{
+"buildVars": {
+"extensionId": "_65Members_@download.fromdoctopdf.com",
+"configDefId": "207743773",
+"toolbarDisplayName": "FromDocToPDF",
+"internalProductName": "FromDocToPDF",
+"filenamePrefix": "65",
+"version": "13.894.16.18919",
+"buildDate": "2019-09-03T16:53:33.587Z",
+"localStorageUrl": "https://fromdoctopdf.dl.myway.com/blank.jhtml",
+"localStorageKeys": [],
+"downloadDomain": ".fromdoctopdf.com",
+"livePing": {
+"url": "https://live.tb.ask.com/tr.gif",
+"interval": 21600000
+},
+"toolbarDataTimeout": 3000,
+"pixelUrl": "https://fromdoctopdf.dl.tb.ask.com/install_pixels.jhtml?partner=${partnerID}",
+"unifiedLoggingUrl": "https://anx.tb.ask.com/anx.gif",
+"newTabURL": "https://hp.myway.com/fromdoctopdf/ttab02chr/index.html?p2=${partnerID}&n=${installDateHex}&st=tab&ptb=${toolbarID}&si=${partnerSubID}&cwsid=${cwsid}",
+"track": "TTAB02",
+"coId": "Y6",
+"uninstallSurveyUrl": "https://fromdoctopdf.dl.myway.com/uninstall.jhtml?surveyUrl=https%253A%252F%252Fhp.myway.com%252Fuo%252Fo1%252Findex.html%253Fc%253D<!--toolbarID-->%2526ptb%253D<!--partnerID-->",
+"defaultPartnerId": "^Y6^chr999^TTAB02^",
+"searchExtensionEnabled": true,
+"searchExtensionUrl": "https://ext.ask.com/index.jhtml?productName={{productName}}&installDate={{installDate}}&partnerId={{partnerID}}&si={{partnerSubID}}&tbGuid={{toolbarGUID}}&coId={{coID}}",
+"offerServiceConfigUrl": "https://ak.imgfarm.com/images/nocache/native/extension-config.json",
+"babConfigUrl": "",
+"babType": "newTab"
+},
+"csw": {
+"nativemessagingHostName": "com.mindspark.fromdoctopdf_65"
+},
+"widgets": [
+    ],
+"executablePackages": [
+    ]
+}

@@ -1,0 +1,24 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "panel/assets/javascripts/sameTab.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Extends the Developer Tools, adding support for SAML Requests and Responses to be displayed in the Developer Tools window",
+   "devtools_page": "devtools.html",
+   "icons": {
+      "128": "panel/assets/images/SAMLforChromeLogoSquare128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAglAs0qkg9yhzvv44LOEmr0wSOMZbNxoLsOeCYPljgDlehZIBi7RytXl+KZ/HpLC5ZlCmoQdVKhUxyn2hGqm6V+cEldPIIl+VRIh0IWxWBJCRDsAy7Dw+NwM99O18k/W+AYsd6cu3vtp5r5kmwngNJy/W6p34vQOHh/iFA0osfekI8g2fx6o5gV7JtjvKHOqrqAVLZIbWK9NiX3pThYyr6DuPW6mBFQlgnwHDMete6Sng7FxaLC81+3HeSBrUSd0k+FLKo8er9y+e3vzegJw9aHWDdIjWmtGNrvKmMj9OiUg46TNz7TdgLDqI7sbFuEJtOLMJJWy8noLYMA51DGQMZQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "44.0",
+   "name": "SAML Chrome Panel",
+   "permissions": [ "\u003Call_urls>", "tabs", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.8.9",
+   "web_accessible_resources": [ "panel/assets/javascripts/sameTab.js" ]
+}
