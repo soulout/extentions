@@ -1,0 +1,31 @@
+{
+   "author": "Apollo",
+   "background": {
+      "persistent": false,
+      "scripts": [ "dist/background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "dist/hook.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "GraphQL debugging tools for Apollo Client in the Chrome developer console.",
+   "devtools_page": "devtools-background.html",
+   "icons": {
+      "128": "imgs/logo400.png",
+      "16": "imgs/logo64.png",
+      "48": "imgs/logo128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAouPWna5Gqe8lTGhIGaTDvgbpi3Occl84O/XbjZ8w/AAsetxWLG5JDSNt487s5DYX8iPq4x4mDmDoxm3gGJpU+IV9/5Ioy74ChYSlPGETWFrY2LkPkGFej27CMF7BroOeWEGOEigCLPZjL1Fs9hE4LcCS6MBfSE9YegCrckVPlf1lqYX8tBo7NErzx7m27xvqqS2GY9Z/9beR/Wwiude/EELzgR6Npd82fJMEZeJJEY8IuQR2OtTsLXefHc+tK+oktpH8c2G2BRdIQo91B0WDW7vyM62p8cVid/W3rwHZn6diTr0YxoqPAM+l2A1eaPr/dQou4rUjIPrLaxDdQBF4QQIDAQAB",
+   "manifest_version": 2,
+   "name": "Apollo Client Developer Tools",
+   "page_action": {
+
+   },
+   "permissions": [ "storage", "tabs", "http://*/*", "https://*/*" ],
+   "short_name": "Apollo DevTools",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.2.3",
+   "web_accessible_resources": [ "devtools.html", "devtools-background.html", "dist/backend.js" ]
+}

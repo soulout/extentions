@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_title": "Adobe Analytics debugger is ON"
+   },
+   "content_scripts": [ {
+      "js": [ "cs.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Prints to JavaScript console what data is sent to Adobe Analytics.",
+   "icons": {
+      "128": "icon.png",
+      "16": "icon.png",
+      "48": "icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCl7IE5t7oDEnD0rWy5uifGrsQi3bweU8xUhxiq90SR5+EkhEVWqPknqhGQTW/eiwaqx5rQlZ1aKL3l8ENRHiLeea6KIlUGSwpQszumxiFXanQfZnzmxzwzJ13TWXgMJAQEzC5kolc2C2+atwY9pSsCYHk+geQYV61mzWHubWc9VQIDAQAB",
+   "manifest_version": 2,
+   "name": "Debugger for Adobe Analytics",
+   "permissions": [ "tabs", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4.3"
+}

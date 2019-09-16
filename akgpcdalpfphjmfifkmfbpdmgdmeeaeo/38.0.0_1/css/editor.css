@@ -1,0 +1,62 @@
+.top-buttons {
+  text-align: right;
+  background: white;
+}
+
+.top-buttons button {
+  border: 1px solid white;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.login-btn {
+  background: #001680;
+}
+.dashboard {
+  background: #33ab4d;
+}
+
+.addthis_toolbox {
+  width: 284px;
+  padding: 10px 0 6px 10px;
+  border: 3px solid #eee;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+textarea {
+  outline: none !important;
+}
+
+.hover_effect div {
+  float: left;
+}
+
+.hover_effect a {
+  border: 2px solid #fff;
+  padding: 2px 2px 2px 16px;
+  position: relative;
+  text-decoration: none;
+}
+
+.hover_effect a:hover {
+  border: 2px solid #105cb6;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  background: #b4d3f8;
+  color: #105cb6;
+  text-decoration: none;
+}
+
+.hover_effect span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 2px;
+  left: 1px;
+}
+
+canvas {
+  border: 1px solid black;
+}

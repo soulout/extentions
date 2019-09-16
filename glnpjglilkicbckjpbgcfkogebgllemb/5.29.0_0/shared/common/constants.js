@@ -1,0 +1,1 @@
+Okta.Constants=function(){var s={QuickAccessTabIdPrefix:"tab_quick_access_apps_",ModalCloseAccessKey:"x"};return s}();
