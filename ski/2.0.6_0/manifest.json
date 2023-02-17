@@ -1,0 +1,23 @@
+{
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "Inspect Web Analytic requests including Snowplow, Adobe Analytics, and more",
+   "devtools_page": "devtools.html",
+   "homepage_url": "https://github.com/ski-goggles/ski-goggles",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "images/ski-goggles-128.png",
+      "16": "images/ski-goggles-16.png",
+      "48": "images/ski-goggles-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmRDNZUml1rmEbdSo0+3DXz43d2sWVSVrtRbyM4T12KoBLWq/RRKWQr6xNOaStnFCYk1GsZgh1wTPWdhgaMGNijvnbdhKRT0EVRcjhdfD9OQ+9TlUS3h31R0bNvTWfCiSLgEEiwFIF+AxOzVrcash0RnFe3fQq2l3u7fnlXuJHj3GOMlEKR82hhIqdxGPYOaDkFjqG+/Nt1PlgFJ8KhwAsYJ2VlKapvauVd2M62nhsJZWzwdrXD/fv1snPKNXXRr1lhG5XSX/c/PkARZ3Zdn3SaySiwNcN43mJG4zC1dzROF2OIO52WGW+Uo758fTDeUbHbvPpxhLxh2DWTebA4U0DQIDAQAB",
+   "manifest_version": 3,
+   "minimum_chrome_version": "88.0",
+   "name": "Ski Goggles",
+   "options_page": "options.html",
+   "permissions": [ "storage", "webRequest", "webNavigation" ],
+   "short_name": "Ski Goggles",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0.6"
+}
